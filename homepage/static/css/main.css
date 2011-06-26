@@ -1,0 +1,35 @@
+body {
+	background-color: grey;
+}
+
+header {
+	margin-top: 25px;
+}
+
+header h1 {
+	font-size: 40px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav #nav-1 {
+	margin-left: 0px;
+}
+
+nav li {
+	float: left;
+	font-size: 20px;
+}
+
+nav ul li a { 
+    text-decoration: none; 
+	color: #fff; 
+} 
+ 
+nav ul li a:hover { 
+	color: #000; 
+	border-bottom: 2px solid #000;
+	font-weight: bold;
+} 
