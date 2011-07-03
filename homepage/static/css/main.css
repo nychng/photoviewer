@@ -1,3 +1,26 @@
+/* Sticky Footers */
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4px;
+}
+
+.footer, .push {
+    height: 4px;
+}
+
+/* Homepage CSS */
+
 body {
 	background-color: grey;
 }
@@ -33,3 +56,5 @@ nav ul li a:hover {
 	border-bottom: 2px solid #000;
 	font-weight: bold;
 } 
+
+

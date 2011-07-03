@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block head %}
+	<title>
+		{% block page_title %}{% endblock page_title %}
+	</title>
+    <link rel="icon" href="{{ MEDIA_URL }}favicon.ico" />
+
+    <!--Global Meta-->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="robots" content="all">
+    <!--Page Specific Meta-->
+    {% block pagemeta %}{% endblock %}
+
+	<!--Global CSS-->
+	<link rel="stylesheet" type="text/css" media="all" href="{{ MEDIA_URL }}css/main.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="{{ MEDIA_URL }}css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="{{ MEDIA_URL }}css/text.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="{{ MEDIA_URL }}css/960.css" />
+	
+    <!--Page Specific css-->
+    {% block pagecss %}{% endblock %}
+
+	<!--Global JS-->
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/main.js"></script>
+    <!--Page Specific js-->
+    {% block pagejs %}{% endblock %}
+
+{% endblock head %}
+
+{% block body %}
+
+    <div class="wrapper">
+        <div id="header">
+        </div><!-- end header -->
+
+        <div class="container_12">
+            <div id="page_trimming">
+                <!--This is for page title, page-specific menu and, if necessary, breadcrumb-->
+                {% block page_trimming %}{% endblock %}
+            </div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+        <div class="push"></div>
+    </div> <!-- end wrapper -->
+	
+	<div id="footer">
+		{% block footer %}
+		<div class="container_12">
+			<div class="grid_2">
+				<ul>
+					<li><h6>About</h6></li>
+				</ul>
+			</div>
+	
+			<div class="clear"></div>
+			<div id="legals" class="grid_12">
+				<small>All photographs are copyright.
+				</small>
+			</div>
+		</div>
+		{% endblock footer %}
+	</div> <!-- end footer -->
+{% endblock body %}
