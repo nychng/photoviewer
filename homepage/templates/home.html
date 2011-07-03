@@ -1,25 +1,20 @@
 {% extends "site_base.html" %}
 
-{% block content %}
-	<section id="nav">
-		<header>
-			<div class="container_12">
-				<div class="grid_12">
-					<h1>kervin's photographs</h1>
-					<nav>
-						<ul>
-							<li id="nav-1"><a href="">home</a></li>
-							<li id="nav-2"><a href="">nature</a></li>
-							<li id="nav-3"><a href="">people</a></li>
-							<li id="nav-4"><a href="">urban</a></li>
-							<li id="nav-5"><a href="">animals</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
-	</section>
+{% block page_trimming %}
+<div class="grid_12">
+	<nav>
+		<ul>
+			<li id="nav-1"><a href="">home</a></li>
+			<li id="nav-2"><a href="">nature</a></li>
+			<li id="nav-3"><a href="">people</a></li>
+			<li id="nav-4"><a href="">urban</a></li>
+			<li id="nav-5"><a href="">animals</a></li>
+		</ul>
+	</nav>
+</div>
+{% endblock %}
 
+{% block content %}
 	<section id="images">
 	</section>
 {% endblock content %}

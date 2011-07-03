@@ -12,29 +12,30 @@ html, body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -4px;
+    margin: 0 auto -123px;
 }
 
 .footer, .push {
-    height: 4px;
+    height: 123px;
 }
 
-/* Homepage CSS */
-
-body {
-	background-color: grey;
+/* Homepage CSS http://www.colourlovers.com/palette/43453/yohji_yamamoto */
+#header {
+	background-color: black;
+	color: #fff;
 }
 
-header {
-	margin-top: 25px;
+#header {
+	padding-top: 25px;
 }
 
-header h1 {
+#header h1 {
 	font-size: 40px;
 }
 
 nav ul {
 	list-style: none;
+	margin: 0;
 }
 
 nav #nav-1 {
@@ -51,10 +52,41 @@ nav ul li a {
 	color: #fff; 
 } 
  
-nav ul li a:hover { 
-	color: #000; 
-	border-bottom: 2px solid #000;
-	font-weight: bold;
+#nav-1 a:hover { 
+	color: #FF5B78; 
+	border-bottom: 2px solid #FF5B78;
 } 
 
+#nav-2 a:hover { 
+	color: #CBE86B; 
+	border-bottom: 2px solid #CBE86B;
+} 
 
+#nav-3 a:hover { 
+	color: #FFF2CC; 
+	border-bottom: 2px solid #FFF2CC;
+} 
+
+#nav-4 a:hover { 
+	color: #000000; 
+	border-bottom: 2px solid #000000;
+} 
+
+#nav-5 a:hover { 
+	color: #774F38; 
+	border-bottom: 2px solid #774F38;
+} 
+
+#page_trimming {
+	background-color: #757575;
+	padding: 10px 0;
+}
+
+#footer {
+	border-top: 3px solid black;
+	padding: 20px 0;
+	background-color: #464D70;
+}
+
+#footer h6 {
+}

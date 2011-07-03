@@ -30,37 +30,45 @@
 {% endblock head %}
 
 {% block body %}
-
-    <div class="wrapper">
-        <div id="header">
-        </div><!-- end header -->
-
-        <div class="container_12">
-            <div id="page_trimming">
-                <!--This is for page title, page-specific menu and, if necessary, breadcrumb-->
-                {% block page_trimming %}{% endblock %}
-            </div>
-            {% block content %}
-            {% endblock content %}
-        </div>
-        <div class="push"></div>
-    </div> <!-- end wrapper -->
-	
-	<div id="footer">
-		{% block footer %}
+<div class="wrapper">
+	<div id="header">
 		<div class="container_12">
-			<div class="grid_2">
-				<ul>
-					<li><h6>About</h6></li>
-				</ul>
-			</div>
-	
-			<div class="clear"></div>
-			<div id="legals" class="grid_12">
-				<small>All photographs are copyright.
-				</small>
+			<div  class="grid_12">
+				<h1>kervin's photographs</h1>
 			</div>
 		</div>
-		{% endblock footer %}
-	</div> <!-- end footer -->
+	</div> <!-- end header -->
+	
+	<div id="page_trimming">
+		<div class="container_12">
+			<!--This is for page title, page-specific menu and, if necessary, breadcrumb-->
+			{% block page_trimming %}{% endblock %}
+		</div>
+	</div> <!-- end page trimming -->
+	
+	<div id="main-content">
+		{% block content %}
+		{% endblock content %}
+	</div>
+	
+	<div class="push"></div>
+</div> <!-- end wrapper -->
+
+<div id="footer">
+	{% block footer %}
+	<div class="container_12">
+		<div class="grid_2">
+			<h6>About</h6>
+		</div>
+
+		<div class="clear"></div>
+		<div id="legals" class="grid_12">
+			<small><strong>© 2011 Kervin.</strong> 
+			All Rights Reserved<br />
+			Privacy | Terms of Use
+			</small>
+		</div>
+	</div>
+	{% endblock footer %}
+</div> <!-- end footer -->
 {% endblock body %}
